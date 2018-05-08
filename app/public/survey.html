@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--jquery cdn-->
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <!--materialize cdn-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+          integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+
+    <title>Survey</title>
+</head>
+<body class="survey container blue darken-4">
+<!--<div class="container">-->
+<div class="survey row">
+    <div class="survey card-panel red white-text darken-2 center">
+        <h1 class="survey center">Friend Finder!</h1>
+        <i class="survey center fab fa-searchengin fa-8x" style="color:darkblue"></i>
+    </div>
+</div>
+<div class="row">
+    <div class="survey col s12 m8 offset-m2 white-text">
+        <div class="survey card red darken-1">
+            <div class="survey card-header center">
+                <h4><i class="survey fas fa-handshake" style="color:darkblue"></i> Answer these questions to see who you
+                    match with!<i
+                            class="survey fas fa-handshake" style="color:darkblue"></i></h4>
+            </div>
+            <div class="survey card-content center">
+                <h4 class="survey" style="border-bottom:solid blue 1px ">Survey Questions</h4>
+
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s8">
+                            <input placeholder="Name(required)" type="text" id="name" class="validate">
+                            <label for="name">Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s8">
+                            <input type="text" placeholder="Picture Link(Required)" id="pictureLink"
+                                   class="validate">
+                            <label for="pictureLink">Link to Picture</label>
+                        </div>
+                    </div>
+                </form>
+                <h5>Question 1</h5>
+
+                <div class="input-field col s12">
+                    <select>
+                        <option value="" class="disable selected">Choose Your Option</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                    </select>
+                    <label>Question 1</label>
+                </div>
+
+
+                <button class="survey btn blue darken-4 white-text waves-effect waves-red"
+                        id="surveySubmit" type="submit"><i
+                        class="survey fas fa-certificate" style="color:red"></i> Submit
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="row">
+    <a class="white-text" href="/api/friends">Friends API | </a>
+    <a class="white-text" href="https://github.com/Livingnight/FriendFinder">Github Repo</a>
+</div>
+
+</div>
+
+
+<!-- Compiled and minified JavaScript -->
+<script src="../data/friends.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+</body>
+</html>
