@@ -37,7 +37,7 @@
                             class="survey fas fa-handshake" style="color:darkblue"></i></h4>
             </div>
             <div class="survey card-content center">
-                <h4 class="survey" style="border-bottom:solid blue 1px ">Survey Questions</h4>
+                <h4 class="survey" style="border-bottom:solid blue 1px; padding-bottom: 5px;">Survey Questions</h4>
 
                 <form class="col s12">
                     <div class="row">
@@ -57,7 +57,7 @@
                 <h5>Question 1</h5>
 
                 <div class="input-field col s12">
-                    <select>
+                    <select id="q1">
                         <option value="" class="disable selected">Choose Your Option</option>
                         <option value="1">1 (strongly disagree)</option>
                         <option value="2">2</option>
@@ -67,12 +67,132 @@
                     </select>
                     <label>Question 1</label>
                 </div>
+                <h5>Question 2</h5>
+                <div class="input-field col s12">
+                    <select id="q2">
+                        <option value="" class="disable selected">Choose Your Option</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                    </select>
+                    <label>Question 2</label>
+                </div>
+                <h5>Question 3</h5>
+                <div class="input-field col s12">
+                    <select id="q3">
+                        <option value="" class="disable selected">Choose Your Option</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                    </select>
+                    <label>Question 3</label>
+                </div>
+                <h5>Question 4</h5>
+                <div class="input-field col s12">
+                    <select id="q4">
+                        <option value="" class="disable selected">Choose Your Option</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                    </select>
+                    <label>Question 4</label>
+                </div>
+                <h5>Question 5</h5>
+                <div class="input-field col s12">
+                    <select id="q5">
+                        <option value="" class="disable selected">Choose Your Option</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                    </select>
+                    <label>Question 5</label>
+                </div>
+                <h5>Question 6</h5>
+                <div class="input-field col s12">
+                    <select id="q6">
+                        <option value="" class="disable selected">Choose Your Option</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                    </select>
+                    <label>Question 6</label>
+                </div>
+
+                <h5>Question 7</h5>
+                <div class="input-field col s12">
+                    <select id="q7">
+                        <option value="" class="disable selected">Choose Your Option</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                    </select>
+                    <label>Question 7</label>
+                </div>
+                <h5>Question 8</h5>
+                <div class="input-field col s12">
+                    <select id="q8">
+                        <option value="" class="disable selected">Choose Your Option</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                    </select>
+                    <label>Question 8</label>
+                </div>
+                <h5>Question 9</h5>
+                <div class="input-field col s12">
+                    <select id="q9">
+                        <option value="" class="disable selected">Choose Your Option</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                    </select>
+                    <label>Question 9</label>
+                </div>
+                <h5>Question 10</h5>
+                <div class="input-field col s12">
+                    <select id="q10">
+                        <option value="" class="disable selected">Choose Your Option</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                    </select>
+                    <label>Question 10</label>
+                </div>
 
 
-                <button class="survey btn blue darken-4 white-text waves-effect waves-red"
+                <a href=""><button data-target="modal1"
+                                          class="survey modal-trigger btn blue
+                                          darken-4 white-text waves-effect waves-red"
                         id="surveySubmit" type="submit"><i
                         class="survey fas fa-certificate" style="color:red"></i> Submit
-                </button>
+                </button></a>
+                <div id="modal1" class="modal modal-open black-text">
+                    <div class="modal-content">
+                        <h4>whosa funky monkey</h4>
+                        <p>Your answers are being compared</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">click me</a>
+                    </div>
+                </div>
 
             </div>
 
@@ -88,6 +208,51 @@
 
 
 <!-- Compiled and minified JavaScript -->
+<script>
+    $(document).ready( () => {
+        $('.modal').modal();
+        $('select').formSelect();
+
+        $('#surveySubmit').on('click', event => {
+            event.preventDefault();
+            const answer ={
+                name: $('#name').val().trim(),
+                picLink: $('#pictureLink').val().trim(),
+                answerArr: [
+                    $('#q1 option:selected').val(),
+                    $('#q2 option:selected').val(),
+                    $('#q3 option:selected').val(),
+                    $('#q4 option:selected').val(),
+                    $('#q5 option:selected').val(),
+                    $('#q6 option:selected').val(),
+                    $('#q7 option:selected').val(),
+                    $('#q8 option:selected').val(),
+                    $('#q9 option:selected').val(),
+                    $('#q10 option:selected').val()
+                ]
+
+            };
+            $('#modal1').openModal();
+            // const answers = instance.getSelectedValues();
+            console.log(`${JSON.stringify(answer, null, 2)}`);
+            $.post('/api/friends', answer,
+                data => {
+                    switch(data){
+                        case true:
+                            $('#modal1').openModal();
+                            break;
+                        case false:
+                            $('#modal2').open();
+                            break;
+
+
+
+                    }
+                })
+
+        })
+    });
+</script>
 <script src="../data/friends.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 </body>
