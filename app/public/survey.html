@@ -6,10 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--jquery cdn-->
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
+
     <!--materialize cdn-->
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
@@ -208,6 +205,13 @@
 
 
 <!-- Compiled and minified JavaScript -->
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="../data/friends.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
 <script>
     $(document).ready( () => {
         $('.modal').modal();
@@ -232,28 +236,21 @@
                 ]
 
             };
-            $('#modal1').openModal();
+            // $('#modal1').openModal();
             // const answers = instance.getSelectedValues();
             console.log(`${JSON.stringify(answer, null, 2)}`);
             $.post('/api/friends', answer,
                 data => {
-                    switch(data){
-                        case true:
-                            $('#modal1').openModal();
-                            break;
-                        case false:
-                            $('#modal2').open();
-                            break;
-
-
-
+                    if(data) {
+                        $('#modal1').openModal();
+                    }else{
+                        alert("that didn't work");
                     }
+
                 })
 
         })
     });
 </script>
-<script src="../data/friends.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 </body>
 </html>
