@@ -9,6 +9,7 @@
 [Link to deployed app](https://gt-friend-finder.herokuapp.com/)
 
 ### Dependencies and Frameworks Used
+
 1.**Express**
 2.**Materialize**
 3.**Body Parser**
