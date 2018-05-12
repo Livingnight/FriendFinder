@@ -21,15 +21,17 @@ module.exports = app => {
             console.log(`friend test: ${friendTest}`);
             if (friendTest <= friendScore) {
                 friendScore = friendTest;
-                friendMatch = value;
                 console.log(friendMatch);
+                return friendMatch = value;
             }
         });
         console.log(`friend match: ${JSON.stringify(null, 2, friendMatch)}`);
         friendData.push(userData);
 
         res.send(JSON.stringify(friendMatch));
+        friendScore = sum1;
         res.json(true);
+        location.reload();
 
     })
 };
