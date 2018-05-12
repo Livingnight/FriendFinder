@@ -1,56 +1,40 @@
 let friends = [
     {
         name: "Garland",
-        picture: "k;kljasdf;lja;sklj",
+        picture: "Garlandspic.jpg",
         answers: [1,
-        4,
-        5,
-        3,
-        4,
-        4,
-        2,
-        4,
-        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         1
         ]
     },
     {
         name: "Vanessa",
-        picture: "bljsdfl;kjasfd",
+        picture: "Vanessaspic.jpg",
         answers: [
-            4,
-            3,
-            5,
             2,
             2,
-            1,
-            3,
-            4,
-            4,
-            6
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
         ]
     },
     {
-        name: "Garland",
-        picture: "k;kljasdf;lja;sklj",
+        name: "Leo",
+        picture: "Leospic.jpg",
         answers: [
-            1,
-            4,
-            5,
             3,
-            4,
-            4,
-            2,
-            4,
-            5,
-            1
-        ]
-    },
-    {
-        name: "Garland",
-        picture: "k;kljasdf;lja;sklj",
-        answers: [
-            1,
             3,
             3,
             3,
@@ -63,19 +47,35 @@ let friends = [
         ]
     },
     {
-        name: "Garland",
-        picture: "k;kljasdf;lja;sklj",
+        name: "Andrea",
+        picture: "Andreaspic.jpg",
         answers: [
-            1,
             4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+        ]
+    },
+    {
+        name: "Jay",
+        picture: "Jayspic.jpg",
+        answers: [
             5,
-            3,
-            4,
-            4,
-            2,
-            4,
             5,
-            1
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
         ]
     },
 ];
