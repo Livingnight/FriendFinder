@@ -11,27 +11,27 @@ module.exports = app => {
         let array = userData.answerArr.map(Number);
         const sum1 = array.reduce((a, b) => a + b, 0);
         let friendScore = sum1;
-        let friendMatch;
         console.log(`sum 1: ${sum1}`);
+        let friendDiff = [];
+
         friendData.forEach(value => {
-            console.log(value.answers);
+            // console.log(value.answers);
             let sum2 = value.answers.reduce((a, b) => a + b, 0);
             console.log(`sum2: ${sum2}`);
             let friendTest = Math.abs(sum1 - sum2);
             console.log(`friend test: ${friendTest}`);
-            if (friendTest <= friendScore) {
-                friendScore = friendTest;
-                console.log(friendMatch);
-                return friendMatch = value;
-            }
+            console.log(`friendScore: ${friendScore}`);
+            friendDiff.push(friendTest);
         });
-        console.log(`friend match: ${JSON.stringify(null, 2, friendMatch)}`);
-        friendData.push(userData);
+        console.log(`friendDiff: ${friendDiff}`);
+        let min = Math.min(...friendDiff);
+        console.log(`min: ${min}`);
+        const friendIndex = friendDiff.indexOf(min);
+        console.log(`index of friendDiff(min): ${friendIndex}`);
+        res.json(JSON.stringify(friendData[friendIndex]));
 
-        res.send(JSON.stringify(friendMatch));
+        friendData.push(userData);
         friendScore = sum1;
-        res.json(true);
-        location.reload();
 
     })
 };

@@ -213,7 +213,6 @@
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-<script src="../data/friends.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
 <script>
@@ -244,7 +243,8 @@
             // const answers = instance.getSelectedValues();
             $('#results').hide();
             $('#loading').show();
-            // console.log(`${JSON.stringify(answer, null, 2)}`);
+            console.log(answer);
+
             $.post('/api/friends', answer)
                 .then(
                 data => {
