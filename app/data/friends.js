@@ -16,7 +16,7 @@ let friends = [
     },
     {
         name: "Vanessa",
-        picture: "https://giphy.com/gifs/l3zoKeX8bMG5sMP4s",
+        picture: "https://www.pinmart.com/assets/1/19/DimAlternate/439_1k.jpg?15725",
         answers: [
             2,
             2,
@@ -48,7 +48,7 @@ let friends = [
     },
     {
         name: "Andrea",
-        picture: "https://giphy.com/explore/pepe",
+        picture: "https://www.pinmart.com/assets/1/19/DimAlternate/439_1k.jpg?15725",
         answers: [
             4,
             4,
@@ -64,7 +64,7 @@ let friends = [
     },
     {
         name: "Jay",
-        picture: "https://tenor.com/search/zelda-gifs",
+        picture: "https://scontent.fatl1-1.fna.fbcdn.net/v/t1.0-9/21752395_3323575524251_3951731668951165133_n.jpg?_nc_cat=0&oh=582791d5b878344cdc3c64dc96433531&oe=5B8036A7",
         answers: [
             5,
             5,

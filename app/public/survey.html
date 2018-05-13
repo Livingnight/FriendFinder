@@ -252,7 +252,7 @@
                     data => {
                         console.log(`data name: ${data.name}, data picture: ${data.picture}`);
                         $('#results').html(
-                            `<h3>Name: ${data}</h3><img class="img-responsive" src="${data.picture}">`
+                            `<h3>Name: ${data.name}</h3><img class="img-responsive" src="${data.picture}">`
                         ).show();
                         $('#loading').hide();
                         console.log(data);

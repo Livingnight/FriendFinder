@@ -34,7 +34,7 @@ module.exports = app => {
         console.log(`min: ${min}`);
         const friendIndex = friendDiff.indexOf(min);
         console.log(`index of friendDiff(min): ${friendIndex}`);
-        res.json(JSON.stringify(friendData[friendIndex]));
+        res.json(friendData[friendIndex]);
 
         friendData.push(userData);
         friendScore = sum1;
