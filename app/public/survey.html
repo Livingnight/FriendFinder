@@ -191,7 +191,7 @@
                         <p>hello</p>
                     </div>
                     <div class="modal-footer">
-                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">click me</a>
+                        <a href="" class="modal-close waves-effect waves-green btn-flat">click me</a>
                     </div>
                 </div>
 
@@ -224,18 +224,18 @@
             event.preventDefault();
             const answer ={
                 name: $('#name').val().trim(),
-                picLink: $('#pictureLink').val().trim(),
-                answerArr: [
-                    $('#q1 option:selected').val(),
-                    $('#q2 option:selected').val(),
-                    $('#q3 option:selected').val(),
-                    $('#q4 option:selected').val(),
-                    $('#q5 option:selected').val(),
-                    $('#q6 option:selected').val(),
-                    $('#q7 option:selected').val(),
-                    $('#q8 option:selected').val(),
-                    $('#q9 option:selected').val(),
-                    $('#q10 option:selected').val()
+                picture: $('#pictureLink').val().trim(),
+                answers: [
+                    parseInt($('#q1 option:selected').val()),
+                    parseInt($('#q2 option:selected').val()),
+                    parseInt($('#q3 option:selected').val()),
+                    parseInt($('#q4 option:selected').val()),
+                    parseInt($('#q5 option:selected').val()),
+                    parseInt($('#q6 option:selected').val()),
+                    parseInt($('#q7 option:selected').val()),
+                    parseInt($('#q8 option:selected').val()),
+                    parseInt($('#q9 option:selected').val()),
+                    parseInt($('#q10 option:selected').val())
                 ]
 
             };
@@ -243,7 +243,7 @@
             // const answers = instance.getSelectedValues();
             $('#results').hide();
             $('#loading').show();
-            console.log(answer);
+            console.log(answer.answerArr);
 
             $.post('/api/friends', answer)
                 .then(

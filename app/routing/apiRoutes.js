@@ -5,17 +5,23 @@ module.exports = app => {
         return res.json(friendData);
     });
     app.post('/api/friends', (req, res) => {
+        console.log(req.body);
         const userData = req.body;
         // let differenceArray = [];
-        console.log(userData);
-        let array = userData.answerArr.map(Number);
+        console.log(typeof(userData.answers));
+        console.log(userData.answers);
+        let array = userData.answers.map(Number);
         const sum1 = array.reduce((a, b) => a + b, 0);
         let friendScore = sum1;
         console.log(`sum 1: ${sum1}`);
         let friendDiff = [];
 
         friendData.forEach(value => {
-            // console.log(value.answers);
+            // array = userData.answers.map(Number);
+            console.log(`Entire object: ${JSON.stringify(value, null, 2)}
+            ----------------------------------------`);
+
+            console.log(`answer values: ${value.answers}`);
             let sum2 = value.answers.reduce((a, b) => a + b, 0);
             console.log(`sum2: ${sum2}`);
             let friendTest = Math.abs(sum1 - sum2);
