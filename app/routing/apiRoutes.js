@@ -17,12 +17,12 @@ module.exports = app => {
         let friendDiff = [];
 
         friendData.forEach(value => {
-            // array = userData.answers.map(Number);
+            let array2 = value.answers.map(Number);
             console.log(`Entire object: ${JSON.stringify(value, null, 2)}
             ----------------------------------------`);
 
             console.log(`answer values: ${value.answers}`);
-            let sum2 = value.answers.reduce((a, b) => a + b, 0);
+            let sum2 = array2.reduce((a, b) => a + b, 0);
             console.log(`sum2: ${sum2}`);
             let friendTest = Math.abs(sum1 - sum2);
             console.log(`friend test: ${friendTest}`);

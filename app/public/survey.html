@@ -175,12 +175,14 @@
                 </div>
 
 
-                <a href=""><button data-target="modal1"
-                                          class="survey btn blue modal-trigger
+                <a href="">
+                    <button data-target="modal1"
+                            class="survey btn blue modal-trigger
                                           darken-4 white-text waves-effect waves-red"
-                        id="surveySubmit" type="submit"><i
-                        class="survey fas fa-certificate" style="color:red"></i> Submit
-                </button></a>
+                            id="surveySubmit" type="submit"><i
+                            class="survey fas fa-certificate" style="color:red"></i> Submit
+                    </button>
+                </a>
                 <div id="modal1" class="modal modal-open black-text">
                     <div class="modal-content" id="loading">
                         <h4>whosa funky monkey</h4>
@@ -216,13 +218,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
 <script>
-    $(document).ready( () => {
+    $(document).ready(() => {
         $('.modal').modal();
         $('select').formSelect();
 
         $('#surveySubmit').on('click', event => {
             event.preventDefault();
-            const answer ={
+            const answer = {
                 name: $('#name').val().trim(),
                 picture: $('#pictureLink').val().trim(),
                 answers: [
@@ -243,18 +245,20 @@
             // const answers = instance.getSelectedValues();
             $('#results').hide();
             $('#loading').show();
-            console.log(answer.answerArr);
+            console.log(answer.answers);
 
             $.post('/api/friends', answer)
                 .then(
-                data => {
+                    data => {
+                        console.log(`data name: ${data.name}, data picture: ${data.picture}`);
+                        $('#results').html(
+                            `<h3>Name: ${data}</h3><img class="img-responsive" src="${data.picture}">`
+                        ).show();
+                        $('#loading').hide();
+                        console.log(data);
+                        M.toast({h1: 'I am toast!'})
 
-                    $('#results').html(`<p>${data}</p>`).show();
-                    $('#loading').hide();
-                    console.log(data);
-                    M.toast({html: 'I am toast!'})
-
-                })
+                    })
 
         })
     });

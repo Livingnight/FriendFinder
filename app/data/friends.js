@@ -1,7 +1,7 @@
 let friends = [
     {
         name: "Garland",
-        picture: "Garlandspic.jpg",
+        picture: "https://buffer.com/gifs-for-social-media",
         answers: [1,
         1,
         1,
@@ -16,7 +16,7 @@ let friends = [
     },
     {
         name: "Vanessa",
-        picture: "Vanessaspic.jpg",
+        picture: "https://giphy.com/gifs/l3zoKeX8bMG5sMP4s",
         answers: [
             2,
             2,
@@ -32,7 +32,7 @@ let friends = [
     },
     {
         name: "Leo",
-        picture: "Leospic.jpg",
+        picture: "http://www.thisiscolossal.com/wp-content/uploads/2018/04/agif2opt.gif",
         answers: [
             3,
             3,
@@ -48,7 +48,7 @@ let friends = [
     },
     {
         name: "Andrea",
-        picture: "Andreaspic.jpg",
+        picture: "https://giphy.com/explore/pepe",
         answers: [
             4,
             4,
@@ -64,7 +64,7 @@ let friends = [
     },
     {
         name: "Jay",
-        picture: "Jayspic.jpg",
+        picture: "https://tenor.com/search/zelda-gifs",
         answers: [
             5,
             5,
