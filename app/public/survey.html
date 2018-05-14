@@ -17,7 +17,7 @@
 
     <title>Survey</title>
 </head>
-<body class="survey container blue darken-4">
+<body class="survey container yellow darken-3">
 <!--<div class="container">-->
 <div class="survey row">
     <div class="survey card-panel red white-text darken-2 center">
@@ -241,8 +241,6 @@
                 ]
 
             };
-            // $('#modal1').openModal();
-            // const answers = instance.getSelectedValues();
             $('#results').hide();
             $('#loading').show();
             console.log(answer.answers);
@@ -256,7 +254,6 @@
                         ).show();
                         $('#loading').hide();
                         console.log(data);
-                        M.toast({h1: 'I am toast!'})
 
                     })
 
