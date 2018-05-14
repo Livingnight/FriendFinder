@@ -1,7 +1,7 @@
 let friends = [
     {
         name: "Garland",
-        picture: "https://buffer.com/gifs-for-social-media",
+        picture: "https://media.giphy.com/media/tZaEooda30vyo/giphy.gif",
         answers: [1,
         1,
         1,
